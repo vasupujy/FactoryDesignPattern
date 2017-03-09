@@ -7,7 +7,7 @@ public class DetailDepartMent {
 				"Spade", "12 months", "mvvm", "12"));
 		DepartMent server = DepartMentFactory.getDeptDetail(new PhpFactory(
 				"Andrid", "12 months", "mvvm", "12"));
-		System.out.println("AbstractFactory PC Config::" + pc);
+		System.out.println("AbstractFactory PC Config::" + pc.getCodePattern());
 		System.out.println("AbstractFactory Server Config::" + server);
 	}
 }
