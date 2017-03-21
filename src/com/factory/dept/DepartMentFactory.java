@@ -1,8 +1,16 @@
 package com.factory.dept;
 
-public class DepartMentFactory {
+import java.io.Serializable;
 
-	public static DepartMent getDepartDetail(String deptType, String project,
+public class DepartMentFactory implements Serializable{
+
+	private static DepartMentFactory departMentFactory = new DepartMentFactory();
+
+	public static DepartMentFactory getInstance() {
+		return departMentFactory;
+	}
+
+	public DepartMent getDepartDetail(String deptType, String project,
 			String timeLine, String codePattern, String teamSize) {
 		if (deptType.equals("Android")) {
 			return new Android(project, timeLine, codePattern, teamSize);

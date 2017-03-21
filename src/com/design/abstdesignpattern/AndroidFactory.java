@@ -16,8 +16,8 @@ public class AndroidFactory implements DepartMentAbstractFactory {
 
 	public DepartMent createDepartment() {
 		// TODO Auto-generated method stub
-		return new Android(project, timeLine, codePattern, teamSize);
+		return new Android.AndroidBuilder(project, timeLine, codePattern,
+				teamSize).setTimeLineIsOptional(true).build();
 	}
-	
-	
+
 }
