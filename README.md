@@ -21,7 +21,7 @@ android or php department in android and php is subclasses.*/
 ```
 
 create a first subclass Android
-
+```java
 public class Android extends DepartMent {
 /*
 Define your common property of subclass
@@ -32,10 +32,10 @@ Define your common property of subclass
 */
 	}
   }
-
+```
 
 create a second subclass Android
-
+```java
 public class Php extends DepartMent {
 /*
 Define your common property of subclass
@@ -46,10 +46,11 @@ Define your common property of subclass
 */
 	}
   }
-  
+```
   
   create a factory class of Department
   
+  ```java
   public class DepartMentFactory {
 	public static Computer getDepartment(String type, String ram, String hdd,
 			String cpu) {
@@ -62,9 +63,10 @@ Define your common property of subclass
 
 	}
 }
+```
 
-
-//in your main class call like this
+in your main class call like this
+```java
 public class DetailDepartMent {
 	public static void main(String[] args) {
 
@@ -76,4 +78,5 @@ public class DetailDepartMent {
     System.out.println("DetailDepartMent" + php);
 	}
 }
-//so you can easily modify in factory and saprate subclasses
+```
+so you can easily modify in factory and saprate subclasses
