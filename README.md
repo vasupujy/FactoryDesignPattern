@@ -8,6 +8,7 @@ first of all you are create a abstract class in define which you have a common p
 
 for example create a abstract class Department
 
+/*
 public abstract class DepartMent {
 
 public abstract String getProject();
@@ -17,7 +18,7 @@ android or php department in android and php is subclasses.*/
 
 
 }
-
+*/
 create a first subclass Android
 
 public class Android extends DepartMent {
